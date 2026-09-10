@@ -20,3 +20,7 @@ python3 menotlarp.py
 *We are fsociety. We are the ones who control the network.* defintely not from ai bro
 Me Not Larp
 to be opsec type sudo apt install opsec please 
+
+## Terminal Tools Menu
+
+![Terminal Tools Menu](terminal_tools_menu.png)
