@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 import sys
 
@@ -17,7 +18,7 @@ def print_banner():
 ║                "Hello Friend"                                ║
 ║          Welcome to Mr. Robot fsociety Tools v2.0            ║
 ║                                                               ║
-║              We are not larp we are fscoeiry       ║
+║              This is for entertainment purposes only         ║
 ║                                                               ║
 ╚═══════════════════════════════════════════════════════════════╝
     """
@@ -44,7 +45,8 @@ def print_menu():
 │ [6] MemoryErase - Trace Elimination Protocol       │
 │ [7] AccessKey - Multi-Protocol Access Tool         │
 │ [8] PulseMonitor - Real-time Threat Detection      │
-│ [9] About fsociety                                 │
+│ [9] OpSec Install - Package Installation Suite     │
+│ [10] About fsociety                                 │
 │ [0] Exit                                            │
 └─────────────────────────────────────────────────────┘
     """
@@ -152,6 +154,90 @@ def tool_8():
     time.sleep(0.5)
     print("[!] Fictional threat detection for LARP purposes\n")
 
+def tool_9():
+    """OpSec Package Installation Simulator"""
+    print("\n[elliot@fsociety ~]$ sudo apt install opsec\n")
+    time.sleep(0.5)
+    print("[sudo] password for elliot: ", end="", flush=True)
+    time.sleep(1.2)
+    print()  # Simulate hidden password input
+    
+    print("\nReading package lists... Done")
+    time.sleep(0.8)
+    print("Building dependency tree... Done")
+    time.sleep(0.8)
+    print("Reading state information... Done")
+    time.sleep(0.6)
+    
+    print("\nThe following packages will be installed:")
+    packages = [
+        "  opsec opsec-core opsec-toolkit opsec-utils",
+        "  libcrypto-advanced libproxy-chain libvpn-manager",
+        "  encryption-suite trace-elimination network-ghost",
+        "  anonymity-framework stealth-protocols identity-vault"
+    ]
+    for pkg in packages:
+        print(pkg)
+        time.sleep(0.3)
+    
+    print("\n0 upgraded, 8 newly installed, 0 to remove")
+    time.sleep(0.5)
+    print("Need to get 247 MB of archives.")
+    time.sleep(0.5)
+    print("After this operation, 1,247 MB of additional disk space will be used.")
+    time.sleep(0.5)
+    
+    print("\nProceed? [Y/n] Y")
+    time.sleep(0.5)
+    
+    print("\nGetting:1 http://archive.fsociety.net/opsec focal/main opsec amd64 [247 MB]")
+    progress = [
+        "1% ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░",
+        "25% ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░",
+        "50% ██████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░",
+        "75% ██████████████████████████░░░░░░░░░░░░░░░░░░░░░░",
+        "100% ███████████████████████████████████████████████████"
+    ]
+    for bar in progress:
+        print(f"\r{bar}", end="", flush=True)
+        time.sleep(0.4)
+    print()
+    
+    print("\nFetched 247 MB in 12s (20.6 MB/s)")
+    time.sleep(0.5)
+    
+    print("\nSelecting previously unselected package opsec.")
+    time.sleep(0.3)
+    print("Unpacking opsec (2.0-fsociety1)...")
+    time.sleep(0.8)
+    print("Setting up opsec-core (2.0-fsociety1)...")
+    time.sleep(0.6)
+    print("Setting up opsec-toolkit (2.0-fsociety1)...")
+    time.sleep(0.6)
+    print("Setting up opsec-utils (2.0-fsociety1)...")
+    time.sleep(0.6)
+    print("Setting up encryption-suite (2.0-fsociety1)...")
+    time.sleep(0.6)
+    
+    print("\n[+] Processing triggers for opsec...")
+    time.sleep(0.5)
+    print("[+] Initializing security protocols...")
+    time.sleep(0.5)
+    print("[+] Configuring anonymity modules...")
+    time.sleep(0.5)
+    print("[+] Loading encryption keys...")
+    time.sleep(0.5)
+    print("[+] Establishing secure environment...")
+    time.sleep(0.5)
+    
+    print("\n✓ opsec successfully installed!")
+    print("\n[elliot@fsociety ~]$ opsec --version")
+    time.sleep(0.3)
+    print("opsec version 2.0 (fsociety edition)")
+    time.sleep(0.3)
+    print("Built for operational security and anonymity\n")
+    print("[!] Installation simulated for roleplay purposes only\n")
+
 def about_fsociety():
     about = """
 ╔═══════════════════════════════════════════════════════════════╗
@@ -201,6 +287,8 @@ def main():
         elif choice == "8":
             tool_8()
         elif choice == "9":
+            tool_9()
+        elif choice == "10":
             about_fsociety()
         elif choice == "0":
             print("\n[*] Disconnecting from fsociety network...")
