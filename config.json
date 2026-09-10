@@ -1,0 +1,9 @@
+{
+  "operator": "elliot",
+  "organization": "fsociety",
+  "version": "2.0",
+  "threat_level": 78,
+  "network_status": "ACTIVE",
+  "encryption": "AES-256",
+  "anonymity_mode": true
+}
