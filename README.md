@@ -1,6 +1,7 @@
 # fsociety - Operational Tools Suite
 
 > "Hello Friend im eliiot andersion i welcoem you to fsociety script opsec so secure no one can hack you from me "
+>  Eliott has returned from ded
 
 
 ## instalion
