@@ -2,7 +2,6 @@
 
 > "Hello Friend im eliiot andersion i welcoem you to fsociety script opsec so secure no one can hack you from me "
 
-An entertainment roleplay toolkit for Mr. Robot fans and LARP enthusiasts.
 
 ## instalion
 ```bash
